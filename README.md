@@ -11,7 +11,7 @@ npm run dev
 
 [http://localhost:8080/index.html]
 
-[http://localhost:8010/cell.html]
+[http://localhost:8080/cell.html]
 
 ## 构建
 
@@ -60,7 +60,6 @@ npm run build // 打包
 ├── LICENSE
 ├── .babelrc          # babel config（es2015默认）
 ├── .eslintrc.js      # eslint配置（eslint-config-vue默认）
-├── server.js         # port 2333
 ├── package.json
 ├── postcss.config.js # postcss（autoprefixer默认）
 ├── webpack.config.js # webpack配置文件
