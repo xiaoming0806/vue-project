@@ -75,11 +75,22 @@ npm run build // 打包
 │   │   │   ├── shopping.css
 │   ├── js
 │   │   │   ├── index.js
-│   │   │   └── shopping.js
-│   │   └── vendors.js
+│   │   │   ├── shopping.js
+│   │   │   ├── manifest.js # 主要是一些异步加载的实现方法（通过建立script方式动态引入js）,因为是核心,所以要第一个进行加载,不然会报错
+│   │   │   ├── vendors.js  #将所有从node_modules/里require(import)的依赖都打包到这里
 │   └── img
 │   │   └── icon_55.30b85eb.png
 │   │── favicon.ico
 │   ├── index.html
 │   └── shopping.html
 ```
+
+# {{ VueJs开发规范  }}
+
+## 文件夹命名
+
+``` bash
+1.pages 下面的文件夹代表着模块的名字
+2.由名词组成（index、shopping、car）
+```
+
