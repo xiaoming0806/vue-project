@@ -87,10 +87,57 @@ npm run build // 打包
 
 # {{ VueJs开发规范  }}
 
-## 文件夹命名
+## pages下的文件夹命名
 
 ``` bash
 1.pages 下面的文件夹代表着模块的名字
 2.由名词组成（index、shopping、car）
 ```
 
+## 文件夹下得文件命名
+
+``` bash
+1.pages 下面统一创建index.vue,index.js,index.html即可
+```
+
+## 组件命名规范
+
+``` bash
+1.有意义的名词、简短、具有可读性
+2.以小写开头，采用短横线分割命名
+3.公共组件命名以公司名称简拼为命名空间(xlh-xx.vue)
+```
+
+## vue文件方法声明顺序
+
+``` bash
+- components
+- props
+- data
+- created
+- mounted
+- activited
+- update
+- beforeRouteUpdate
+- metods
+- filter
+- computed
+- watch
+```
+
+## 注释规范
+
+``` bash
+1.公共组件使用说明
+2.各组件中重要函数或者类说明
+3.复杂的业务逻辑处理说明
+```
+
+## 编码规范
+
+``` bash
+1.使用ES6风格编码源码
+  定义变量使用let ,定义常量使用const
+  使用export ，import 模块化
+2.调试信息 console.log() debugger 使用完及时删除
+```
